@@ -41,7 +41,7 @@ controls.update();
 const loader = new GLTFLoader();
 
 loader.load(
-  'Charlie-Parthanon.glb',
+  '/Charlie-Parthanon.glb',
   function (gltf) {
     const parthenon = gltf.scene;
     parthenon.rotation.y = -1;
