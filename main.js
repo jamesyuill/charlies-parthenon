@@ -10,7 +10,7 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
-camera.position.set(0, 10, 60);
+camera.position.set(0, 14, 60);
 
 //RENDERER
 const renderer = new THREE.WebGLRenderer({
@@ -45,6 +45,7 @@ loader.load(
   function (gltf) {
     const parthenon = gltf.scene;
     parthenon.rotation.y = -1;
+    parthenon.position.x = -2;
     scene.add(parthenon);
   },
   undefined,
